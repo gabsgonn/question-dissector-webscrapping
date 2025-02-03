@@ -1,0 +1,28 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.5rem;
+}
+
+.nav-items {
+    display: flex;
+    padding: 0 1em;
+}
+
+.nav-link {
+    text-decoration: none;
+    
+}
+
+.btn-default {
+    padding: 10px 50px;
+    border-radius: 20px;
+    border: none;
+    background-color: #55F6E8;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: "Anton";
+
+    }
