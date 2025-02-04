@@ -23,7 +23,7 @@ export default function Navbar() {
     ]
 
     return(
-        <header className='navbar content'>
+        <header className='navbar'>
             <Image
                 src="logo.svg"
                 width={190}
@@ -31,19 +31,21 @@ export default function Navbar() {
                 alt="Logo Dissecador de Questões"
             />
 
-            <ul className='nav-items'>
-                {items.map((items, index)=> (
-                    <NavItem 
+            <article className='navbar-links'>
+                <button className='btn-default'>
+                    Login
+                </button>
+
+                <ul className='nav-items'>
+                    {items.map((items, index)=> (
+                        <NavItem 
                         key={index}
                         url={items.url}
                         label={items.label}
-                    />
-                ))}
-            </ul>
-
-            <button className='btn-default'>
-                Login
-            </button>
+                        />
+                    ))}
+                </ul>
+            </article>
 
         </header>
     );
